@@ -1,0 +1,181 @@
+load(":image_opts.bzl", "boot_image_opts")
+load(":msm_kernel_la.bzl", "define_msm_la")
+load(":target_variants.bzl", "la_variants")
+
+target_name = "anorak"
+
+def define_anorak():
+    _anorak_in_tree_modules = [
+        # keep sorted
+        "drivers/bus/mhi/devices/mhi_dev_dtr.ko",
+        "drivers/bus/mhi/devices/mhi_dev_uci.ko",
+        "drivers/bus/mhi/host/mhi.ko",
+        "drivers/clk/qcom/camcc-anorak.ko",
+        "drivers/clk/qcom/clk-dummy.ko",
+        "drivers/clk/qcom/clk-qcom.ko",
+        "drivers/clk/qcom/clk-rpmh.ko",
+        "drivers/clk/qcom/debugcc-anorak.ko",
+        "drivers/clk/qcom/dispcc0-anorak.ko",
+        "drivers/clk/qcom/dispcc1-anorak.ko",
+        "drivers/clk/qcom/gcc-anorak.ko",
+        "drivers/clk/qcom/gdsc-regulator.ko",
+        "drivers/clk/qcom/gpucc-anorak.ko",
+        "drivers/clk/qcom/videocc-anorak.ko",
+        "drivers/cpufreq/qcom-cpufreq-hw.ko",
+        "drivers/cpufreq/qcom-cpufreq-hw-debug.ko",
+        "drivers/dma-buf/heaps/qcom_dma_heaps.ko",
+        "drivers/dma/qcom/bam_dma.ko",
+        "drivers/dma/qcom/msm_gpi.ko",
+        "drivers/edac/kryo_arm64_edac.ko",
+        "drivers/edac/qcom_edac.ko",
+        "drivers/firmware/arm_scmi/qcom_scmi_vendor.ko",
+        "drivers/firmware/qcom-scm.ko",
+        "drivers/hwspinlock/qcom_hwspinlock.ko",
+        "drivers/hwtracing/stm/stm_console.ko",
+        "drivers/hwtracing/stm/stm_core.ko",
+        "drivers/hwtracing/stm/stm_ftrace.ko",
+        "drivers/hwtracing/stm/stm_p_ost.ko",
+        "drivers/i2c/busses/i2c-msm-geni.ko",
+        "drivers/interconnect/qcom/icc-bcm-voter.ko",
+        "drivers/interconnect/qcom/icc-debug.ko",
+        "drivers/interconnect/qcom/icc-rpmh.ko",
+        "drivers/interconnect/qcom/qnoc-anorak.ko",
+        "drivers/interconnect/qcom/qnoc-qos.ko",
+        "drivers/iommu/arm/arm-smmu/arm_smmu.ko",
+        "drivers/iommu/iommu-logger.ko",
+        "drivers/iommu/msm_dma_iommu_mapping.ko",
+        "drivers/iommu/qcom_iommu_debug.ko",
+        "drivers/iommu/qcom_iommu_util.ko",
+        "drivers/irqchip/msm_show_resume_irq.ko",
+        "drivers/irqchip/qcom-pdc.ko",
+        "drivers/nvmem/nvmem_qfprom.ko",
+        "drivers/pci/controller/pci-msm-drv.ko",
+        "drivers/perf/qcom_llcc_pmu.ko",
+        "drivers/pinctrl/qcom/pinctrl-anorak.ko",
+        "drivers/pinctrl/qcom/pinctrl-msm.ko",
+        "drivers/power/reset/qcom-dload-mode.ko",
+        "drivers/power/reset/qcom-reboot-reason.ko",
+        "drivers/regulator/debug-regulator.ko",
+        "drivers/regulator/proxy-consumer.ko",
+        "drivers/regulator/qti-fixed-regulator.ko",
+        "drivers/regulator/qti-ocp-notifier.ko",
+        "drivers/regulator/rpmh-regulator.ko",
+        "drivers/remoteproc/qcom_pil_info.ko",
+        "drivers/remoteproc/qcom_q6v5.ko",
+        "drivers/remoteproc/qcom_q6v5_pas.ko",
+        "drivers/remoteproc/qcom_spss.ko",
+        "drivers/remoteproc/qcom_sysmon.ko",
+        "drivers/remoteproc/rproc_qcom_common.ko",
+        "drivers/rpmsg/qcom_glink.ko",
+        "drivers/rpmsg/qcom_glink_smem.ko",
+        "drivers/rpmsg/qcom_glink_spss.ko",
+        "drivers/rpmsg/qcom_smd.ko",
+        "drivers/slimbus/slim-qcom-ngd-ctrl.ko",
+        "drivers/slimbus/slimbus.ko",
+        "drivers/soc/qcom/boot_stats.ko",
+        "drivers/soc/qcom/cmd-db.ko",
+        "drivers/soc/qcom/core_hang_detect.ko",
+        "drivers/soc/qcom/dcvs/bwmon.ko",
+        "drivers/soc/qcom/dcvs/cpufreq_stats_scmi_v2.ko",
+        "drivers/soc/qcom/dcvs/dcvs_fp.ko",
+        "drivers/soc/qcom/dcvs/memlat.ko",
+        "drivers/soc/qcom/dcvs/qcom-dcvs.ko",
+        "drivers/soc/qcom/dcvs/qcom-pmu-lib.ko",
+        "drivers/soc/qcom/dcvs/qcom_scmi_client.ko",
+        "drivers/soc/qcom/debug_symbol.ko",
+        "drivers/soc/qcom/eud.ko",
+        "drivers/soc/qcom/llcc-qcom.ko",
+        "drivers/soc/qcom/llcc_perfmon.ko",
+        "drivers/soc/qcom/mdt_loader.ko",
+        "drivers/soc/qcom/mem-hooks.ko",
+        "drivers/soc/qcom/mem-offline.ko",
+        "drivers/soc/qcom/mem_buf/mem_buf.ko",
+        "drivers/soc/qcom/mem_buf/mem_buf_dev.ko",
+        "drivers/soc/qcom/memory_dump_v2.ko",
+        "drivers/soc/qcom/minidump.ko",
+        "drivers/soc/qcom/msm_performance.ko",
+        "drivers/soc/qcom/pdr_interface.ko",
+        "drivers/soc/qcom/qcom_cpu_vendor_hooks.ko",
+        "drivers/soc/qcom/qcom_cpucp.ko",
+        "drivers/soc/qcom/qcom_logbuf_vendor_hooks.ko",
+        "drivers/soc/qcom/qcom_ramdump.ko",
+        "drivers/soc/qcom/qcom_rpmh.ko",
+        "drivers/soc/qcom/qcom_va_minidump.ko",
+        "drivers/soc/qcom/qcom_wdt_core.ko",
+        "drivers/soc/qcom/qfprom-sys.ko",
+        "drivers/soc/qcom/qmi_helpers.ko",
+        "drivers/soc/qcom/qsee_ipc_irq_bridge.ko",
+        "drivers/soc/qcom/rq_stats.ko",
+        "drivers/soc/qcom/secure_buffer.ko",
+        "drivers/soc/qcom/smem.ko",
+        "drivers/soc/qcom/socinfo.ko",
+        "drivers/soc/qcom/sysmon_subsystem_stats.ko",
+        "drivers/spi/spi-msm-geni.ko",
+        "drivers/thermal/qcom/bcl_pmic5.ko",
+        "drivers/thermal/qcom/bcl_soc.ko",
+        "drivers/thermal/qcom/cpu_hotplug.ko",
+        "drivers/thermal/qcom/ddr_cdev.ko",
+        "drivers/thermal/qcom/qcom_tsens.ko",
+        "drivers/thermal/qcom/qti_cpufreq_cdev.ko",
+        "drivers/thermal/qcom/qti_devfreq_cdev.ko",
+        "drivers/thermal/qcom/qti_qmi_cdev.ko",
+        "drivers/thermal/qcom/qti_qmi_sensor_v2.ko",
+        "drivers/thermal/qcom/qti_userspace_cdev.ko",
+        "drivers/thermal/qcom/thermal_pause.ko",
+        "drivers/tty/serial/msm_geni_serial.ko",
+        "drivers/usb/dwc3/dwc3-msm.ko",
+        "drivers/usb/gadget/function/usb_f_ccid.ko",
+        "drivers/usb/gadget/function/usb_f_cdev.ko",
+        "drivers/usb/gadget/function/usb_f_diag.ko",
+        "drivers/usb/gadget/function/usb_f_gsi.ko",
+        "drivers/usb/gadget/function/usb_f_qdss.ko",
+        "drivers/usb/misc/ehset.ko",
+        "drivers/usb/misc/lvstest.ko",
+        "drivers/usb/phy/phy-generic.ko",
+        "drivers/usb/phy/phy-msm-snps-hs.ko",
+        "drivers/usb/phy/phy-msm-ssusb-qmp.ko",
+        "drivers/usb/redriver/nb7vpq904m.ko",
+        "drivers/usb/redriver/redriver.ko",
+        "kernel/msm_sysstats.ko",
+        "kernel/sched/walt/sched-walt.ko",
+        "sound/usb/snd-usb-audio-qmi.ko",
+    ]
+
+    _anorak_consolidate_in_tree_modules = _anorak_in_tree_modules + [
+        # keep sorted
+        "drivers/misc/lkdtm/lkdtm.ko",
+        "kernel/sched/walt/sched-walt-debug.ko",
+    ]
+
+    kernel_vendor_cmdline_extras = [
+        # do not sort
+        "console=ttyMSM0,115200n8",
+        "qcom_geni_serial.con_enabled=1",
+        "bootconfig",
+    ]
+
+    for variant in la_variants:
+        board_kernel_cmdline_extras = []
+        board_bootconfig_extras = []
+
+        if variant == "consolidate":
+            mod_list = _anorak_consolidate_in_tree_modules
+        else:
+            mod_list = _anorak_in_tree_modules
+            board_kernel_cmdline_extras += ["nosoftlockup"]
+            kernel_vendor_cmdline_extras += ["nosoftlockup"]
+            board_bootconfig_extras += ["androidboot.console=0"]
+
+        define_msm_la(
+            msm_target = target_name,
+            variant = variant,
+            in_tree_module_list = mod_list,
+            boot_image_opts = boot_image_opts(
+                earlycon_addr = "qcom_geni,0x00998000",
+                kernel_vendor_cmdline_extras = kernel_vendor_cmdline_extras,
+                board_kernel_cmdline_extras = board_kernel_cmdline_extras,
+                board_bootconfig_extras = board_bootconfig_extras,
+            ),
+            #TODO: Need to enable this
+            #dpm_overlay = True,
+        )
