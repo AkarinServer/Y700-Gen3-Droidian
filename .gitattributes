@@ -1,3 +1,15 @@
+# Git LFS 配置 - 追踪大文件
+# 追踪 prebuilts 目录下的所有大文件
+
+# Clang 预编译工具 - 追踪所有 .so 库文件
+kernel-6.1.68/prebuilts/**/*.so filter=lfs diff=lfs merge=lfs -text
+# Clang 可执行文件
+kernel-6.1.68/prebuilts/**/clang-* filter=lfs diff=lfs merge=lfs -text
+kernel-6.1.68/prebuilts/**/clang-check filter=lfs diff=lfs merge=lfs -text
+kernel-6.1.68/prebuilts/**/clang-tidy.real filter=lfs diff=lfs merge=lfs -text
+# 其他大文件
+kernel-6.1.68/prebuilts/**/lld filter=lfs diff=lfs merge=lfs -text
+kernel-6.1.68/prebuilts/**/*.jar filter=lfs diff=lfs merge=lfs -text
 kernel/lenovo/kirby/prebuilts/build-tools/common/framework/ktfmt.jar filter=lfs diff=lfs merge=lfs -text
 kernel/lenovo/kirby/prebuilts/clang/host/linux-x86/clang-r487747c/lib/libLTO.so.17 filter=lfs diff=lfs merge=lfs -text
 kernel/lenovo/kirby/prebuilts/** filter=lfs diff=lfs merge=lfs -text
