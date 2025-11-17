@@ -1,0 +1,82 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Audio
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.afe_proxy.enable=true
+vendor.audio.feature.anc_headset.enable=true
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.compr_cap.enable=false
+vendor.audio.feature.compr_voip.enable=false
+vendor.audio.feature.compress_in.enable=false
+vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.concurrent_capture.enable=true
+vendor.audio.feature.deepbuffer_as_primary.enable=false
+vendor.audio.feature.enable_dp_for_voice=false
+vendor.audio.feature.enable_proxy.enable=true
+vendor.audio.feature.external_dsp.enable=false
+vendor.audio.feature.external_speaker.enable=false
+vendor.audio.feature.external_speaker_tfa.enable=false
+vendor.audio.feature.fluence.enable=true
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.hdmi_edid.enable=true
+vendor.audio.feature.hdmi_passthrough.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.hifi_audio.enable=true
+vendor.audio.feature.hwdep_cal.enable=false
+vendor.audio.feature.incall_music.enable=true
+vendor.audio.feature.keep_alive.enable=true
+vendor.audio.feature.kpi_optimize.enable=true
+vendor.audio.feature.maxx_audio.enable=false
+vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.ras.enable=true
+vendor.audio.feature.record_play_concurency.enable=false
+vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.ssrec.enable=true
+vendor.audio.feature.usb_offload.enable=true
+vendor.audio.feature.usb_offload_burst_mode.enable=false
+vendor.audio.feature.usb_offload_sidetone_volume.enable=false
+vendor.audio.feature.vbat.enable=true
+vendor.audio.feature.wsa.enable=false
+
+# Bluetooth
+vendor.bluetooth.soc=cherokee
+
+# Camera
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+
+# Display
+vendor.display.comp_mask=0
+vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
+vendor.display.disable_decimation=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_inline_rotator=1
+vendor.display.disable_inline_rotator_secure=0
+vendor.display.disable_scaler=0
+vendor.display.enable_default_color_mode=0
+vendor.display.enable_null_display=0
+vendor.display.enable_optimize_refresh=1
+
+# Graphics
+vendor.gralloc.disable_ubwc=0
+
+# Media
+vendor.media.vpp.enable=true
+
+# Perf
+vendor.perf.gestureflingboost.enable=true
+vendor.perf.workloadclassifier.enable=true
+
+# Radio
+vendor.radio.enable_sdr=1
+vendor.radio.enable_temp_prop_check=1
+
+# Sensors
+vendor.sensors.enable.mag_calib=true
+

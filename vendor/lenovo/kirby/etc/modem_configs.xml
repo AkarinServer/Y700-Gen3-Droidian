@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modemconfigs>
+    <config id="ZUI_Full.cfg"></config>
+    <config id="ZUI_Simplified.cfg"></config>
+    <config id="5GNR_LTE_CN_V9.cfg"></config>
+    <config id="FIT_V24_2_volte_full_ip.cfg"></config>
+    <config id="FIT_V24_3_audio.cfg"></config>
+    <config id="MM_audio_playback_capture_v2.0.cfg"></config>
+    <config id="audiobasic_zui20220216.cfg"></config>
+    <config id="CHGPD.cfg"></config>
+    <config id="ZUI_TPUT.cfg"></config>
+    <config id="gps_diag.cfg"></config>
+    <config id="sensors_diag.cfg"></config>
+</modemconfigs>

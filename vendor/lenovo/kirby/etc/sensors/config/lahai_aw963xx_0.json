@@ -1,0 +1,141 @@
+{
+	"config":{
+		"hw_platform": ["HDK", "QRD"],
+		"soc_id": ["557", "577"]
+	},
+	"aw963xx_0_platform":{
+		"owner": "sns_aw963xx",
+		".config":{
+			"owner": "sns_aw963xx",
+			"bus_type":{ "type": "int", "ver": "0",
+				"data": "0"
+			},
+			"bus_instance":{ "type": "int", "ver": "0",
+				"data": "4"
+			},
+			"slave_config":{ "type": "int", "ver": "0",
+				"data": "0x12"
+			},
+			"min_bus_speed_khz":{ "type": "int", "ver": "0",
+				"data": "400"
+			},
+			"max_bus_speed_khz":{ "type": "int", "ver": "0",
+				"data": "400"
+			},
+			"reg_addr_type":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"dri_irq_num":{ "type": "int", "ver": "0",
+				"data": "67"
+			},
+			"irq_pull_type":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"irq_is_chip_pin":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"irq_drive_strength":{ "type": "int", "ver": "0",
+				"data": "2"
+			},
+			"irq_trigger_type":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"num_rail":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"rail_on_state":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"vdd_rail":{ "type": "str", "ver": "0",
+				"data": "/pmic/client/sensor_vdd"
+			},
+			"vddio_rail":{ "type": "str", "ver": "0",
+				"data": "/pmic/client/sensor_vddio"
+			},
+			"rigid_body_type":{ "type": "int", "ver": "0",
+				"data": "0"
+			}
+		},
+		".placement":{
+			"owner": "sns_aw963xx",
+			"0":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"1":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"2":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"3":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"4":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"5":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"6":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"7":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"8":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"9":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"10":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"11":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			}
+		}
+	},
+	"aw963xx_0_sar":{
+		"owner": "sns_aw963xx",
+		".config":{
+			"owner": "sns_aw963xx",
+			"is_dri":{ "type": "int", "ver": "0",
+			"data": "1"
+			},
+			"hw_id":{ "type": "int", "ver": "0",
+			"data": "0"
+			},
+			"res_idx":{ "type": "int", "ver": "0",
+			"data": "0"
+			},
+			"sync_stream":{ "type": "int", "ver": "0",
+			"data": "0"
+			}
+		},
+		".debug_config":{
+			"owner": "sns_aw963xx",
+			"measure_ch":{"type": "int", "ver": "0",
+			"data": "0xff"
+			},
+			"mul_th": {"type": "int", "ver": "0",
+			"data": "1"
+			},
+			"default_config_num": {"type": "int", "ver": "0",
+			"data": "0"
+			},
+			"factory_mode_flag": {"type": "int", "ver": "0",
+			"data": "0"
+			},
+			"irq_mux": {"type": "int", "ver": "0",
+			"data": "2"
+			},
+			"boot_mode": {"type": "int", "ver": "0",
+			"data": "0"
+			},
+			"reserved1": {"type": "int", "ver": "0",
+			"data": "0"
+			}
+		}
+	}
+}

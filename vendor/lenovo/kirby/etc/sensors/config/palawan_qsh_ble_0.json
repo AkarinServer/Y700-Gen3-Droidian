@@ -1,0 +1,18 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD", "IDP"],
+    "soc_id": ["614", "632"]
+  },
+  "qsh_ble_config":{
+    "owner": "qsh_ble",
+    "uart_instance":{ "type": "int", "ver": "0",
+        "data": "6"
+    },
+    "tx_wakeup_pin_num":{ "type": "int", "ver": "0",
+        "data": "-1"
+    },
+    "tx_wakeup_pin_type":{ "type": "str", "ver": "0",
+        "data": "LPASS"
+    }
+  }
+}

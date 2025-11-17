@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf8"?>
+<DistortionCorrection>
+    <distortion model="v1">
+        <width          type="int" >1920</width>
+        <height         type="int" >1440</height>
+        <distortion_k1  type="double" >0.1865370948</distortion_k1>
+        <distortion_k2  type="double" >-0.0826338877</distortion_k2>
+        <distortion_k3  type="double" >0.5965345704</distortion_k3>
+        <distortion_k4  type="double" >-0.3234369999</distortion_k4>
+	</distortion>
+</DistortionCorrection>

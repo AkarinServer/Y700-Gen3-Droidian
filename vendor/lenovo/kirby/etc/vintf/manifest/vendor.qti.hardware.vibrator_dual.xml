@@ -1,0 +1,12 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.qti.hardware.vibrator_dual.device</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IVibratorDual</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>
+

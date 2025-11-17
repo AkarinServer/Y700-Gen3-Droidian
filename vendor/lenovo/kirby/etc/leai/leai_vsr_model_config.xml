@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<leaiModelConfiguration version="1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <vsrModels>
+        <!--   hevc codec section
+        -->
+        <model codec="hevc" iW="480" iH="270" oW="1920" oH="1080">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_480x270_1920x1080_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_480x270_1920x1080_UV.tflite</uvModelPath>
+        </model>
+        <model codec="hevc" iW="640" iH="360" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_640x360_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_640x360_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="hevc" iW="864" iH="480" oW="3456" oH="1920">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_864x480_3456x1920_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_864x480_3456x1920_UV.tflite</uvModelPath>
+        </model>
+        <model codec="hevc" iW="960" iH="540" oW="2880" oH="1620">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_960x540_2880x1620_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_2880x1620_UV.tflite</uvModelPath>
+        </model>
+        <model codec="hevc" iW="960" iH="540" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_960x540_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="hevc" iW="1280" iH="720" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1280x720_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="hevc" iW="1280" iH="720" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1280x720_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="hevc" iW="1920" iH="1080" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1920x1080_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1920x1080_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <!--   av1 codec section
+        -->
+        <model codec="av1" iW="480" iH="270" oW="1920" oH="1080">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_480x270_1920x1080_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_480x270_1920x1080_UV.tflite</uvModelPath>
+        </model>
+        <model codec="av1" iW="640" iH="360" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_640x360_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_640x360_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="av1" iW="864" iH="480" oW="3456" oH="1920">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_864x480_3456x1920_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_864x480_3456x1920_UV.tflite</uvModelPath>
+        </model>
+        <model codec="av1" iW="960" iH="540" oW="2880" oH="1620">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_960x540_2880x1620_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_2880x1620_UV.tflite</uvModelPath>
+        </model>
+        <model codec="av1" iW="960" iH="540" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_960x540_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="av1" iW="1280" iH="720" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1280x720_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="av1" iW="1280" iH="720" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1280x720_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="av1" iW="1920" iH="1080" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1920x1080_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1920x1080_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <!--   vp9 codec section
+        -->
+        <model codec="vp9" iW="480" iH="270" oW="1920" oH="1080">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_480x270_1920x1080_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_480x270_1920x1080_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp9" iW="640" iH="360" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_640x360_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_640x360_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp9" iW="864" iH="480" oW="3456" oH="1920">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_864x480_3456x1920_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_864x480_3456x1920_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp9" iW="960" iH="540" oW="2880" oH="1620">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_960x540_2880x1620_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_2880x1620_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp9" iW="960" iH="540" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_960x540_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp9" iW="1280" iH="720" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1280x720_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp9" iW="1280" iH="720" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1280x720_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp9" iW="1920" iH="1080" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_1920x1080_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1920x1080_3840x2160_UV.tflite</uvModelPath>
+        </model>
+
+        <!--   vp8 codec section
+        -->
+        <model codec="vp8" iW="480" iH="270" oW="1920" oH="1080">
+            <yModelPath>/vendor/etc/models/vsr/vp8_480x270_1920x1080_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_480x270_1920x1080_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp8" iW="640" iH="360" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/vp8_640x360_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_640x360_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp8" iW="864" iH="480" oW="3456" oH="1920">
+            <yModelPath>/vendor/etc/models/vsr/vp8_864x480_3456x1920_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_864x480_3456x1920_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp8" iW="960" iH="540" oW="2880" oH="1620">
+            <yModelPath>/vendor/etc/models/vsr/vp8_960x540_2880x1620_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_2880x1620_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp8" iW="960" iH="540" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/vp8_960x540_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp8" iW="1280" iH="720" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/vp8_1280x720_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp8" iW="1280" iH="720" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/vp8_1280x720_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="vp8" iW="1920" iH="1080" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/vp8_1920x1080_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1920x1080_3840x2160_UV.tflite</uvModelPath>
+        </model>
+
+        <!--   avc codec section
+        -->
+        <model codec="avc" iW="480" iH="270" oW="1920" oH="1080">
+            <yModelPath>/vendor/etc/models/vsr/avc_480x270_1920x1080_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_480x270_1920x1080_UV.tflite</uvModelPath>
+        </model>
+        <model codec="avc" iW="640" iH="360" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/avc_640x360_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_640x360_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="avc" iW="864" iH="480" oW="3456" oH="1920">
+            <yModelPath>/vendor/etc/models/vsr/avc_864x480_3456x1920_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_864x480_3456x1920_UV.tflite</uvModelPath>
+        </model>
+        <model codec="avc" iW="960" iH="540" oW="2880" oH="1620">
+            <yModelPath>/vendor/etc/models/vsr/avc_960x540_2880x1620_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_2880x1620_UV.tflite</uvModelPath>
+        </model>
+        <model codec="avc" iW="960" iH="540" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/avc_960x540_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_960x540_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="avc" iW="1280" iH="720" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/avc_1280x720_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="avc" iW="1280" iH="720" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/avc_1280x720_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1280x720_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="avc" iW="1920" iH="1080" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/avc_1920x1080_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/hevc_av1_vp9_vp8_avc_1920x1080_3840x2160_UV.tflite</uvModelPath>
+        </model>
+
+        <!--   default codec section
+        -->
+        <model codec="default" iW="480" iH="270" oW="1920" oH="1080">
+            <yModelPath>/vendor/etc/models/vsr/default_480x270_1920x1080_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_480x270_1920x1080_UV.tflite</uvModelPath>
+        </model>
+        <model codec="default" iW="640" iH="360" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/default_640x360_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_640x360_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="default" iW="864" iH="480" oW="3456" oH="1920">
+            <yModelPath>/vendor/etc/models/vsr/default_864x480_3456x1920_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_864x480_3456x1920_UV.tflite</uvModelPath>
+        </model>
+        <model codec="default" iW="960" iH="540" oW="2880" oH="1620">
+            <yModelPath>/vendor/etc/models/vsr/default_960x540_2880x1620_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_960x540_2880x1620_UV.tflite</uvModelPath>
+        </model>
+        <model codec="default" iW="960" iH="540" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/default_960x540_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_960x540_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="default" iW="1280" iH="720" oW="2560" oH="1440">
+            <yModelPath>/vendor/etc/models/vsr/default_1280x720_2560x1440_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_1280x720_2560x1440_UV.tflite</uvModelPath>
+        </model>
+        <model codec="default" iW="1280" iH="720" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/default_1280x720_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_1280x720_3840x2160_UV.tflite</uvModelPath>
+        </model>
+        <model codec="default" iW="1920" iH="1080" oW="3840" oH="2160">
+            <yModelPath>/vendor/etc/models/vsr/default_1920x1080_3840x2160_Y.tflite</yModelPath>
+            <uvModelPath>/vendor/etc/models/vsr/default_1920x1080_3840x2160_UV.tflite</uvModelPath>
+        </model>
+
+    </vsrModels>
+</leaiModelConfiguration>

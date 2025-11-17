@@ -1,0 +1,50 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Audio
+ro.config.vc_call_vol_steps=7
+ro.config.media_vol_steps=25
+
+# Bluetooth
+bluetooth.hfp.client=1
+
+# Camera
+camera.disable_zsl_mode=1
+
+# Display
+ro.sf.lcd_density=400
+
+# Graphics
+debug.sf.enable_hwc_vds=1
+debug.sf.hw=1
+debug.sf.latch_unsignaled=1
+persist.hwc.mdpcomp.enable=true
+
+# Media
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+
+# Performance
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Qualcomm
+persist.vendor.qcomsysd.enabled=1
+
+# Radio
+persist.radio.multisim.config=dsds
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.sib16_support=1
+
+# Sensors
+ro.vendor.sensors.mot_detect=true
+ro.vendor.sensors.pmd=true
+ro.vendor.sensors.sta_detect=true
+
+# WiFi
+wifi.interface=wlan0
+

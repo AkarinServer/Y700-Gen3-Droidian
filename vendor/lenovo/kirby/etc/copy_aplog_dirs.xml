@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CopyAplogDirs>
+    <LogDir path="/sys/fs/pstore"></LogDir>
+    <LogDir path="/sys/class/edge/snt8100fsr/dump"></LogDir>
+</CopyAplogDirs>

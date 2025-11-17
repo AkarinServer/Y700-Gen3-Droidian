@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Morpho Image Refiner Parameters Configuration -->
+<!-- Copyright(c) 2021 Morpho China,Inc.  -->
+
+<image_refiner>
+	<version   type="string" length="1">v1.0.6_20220415</version>
+	<camera_id type="int"    length="1">5</camera_id>
+	
+    <params>
+        <iso value="99999">
+			<y_nr_level       			type="float"  rang="[0.0,100.0]"  default="10.0"  length="1">0</y_nr_level>
+			<c_nr_level       			type="float"  rang="[0.0,10.0]"   default="1.0"   length="1">1</c_nr_level>
+			<c_nr_times       			type="int"    rang="[1,6]"        default="1"     length="1">1</c_nr_times>
+			<block_cnr        			type="int"    rang="[1,6]"        default="1"     length="1">0</block_cnr>
+			<hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.2"   length="1">1.2</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.2</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.2"   length="1">0.003</hdr_irr_obc_thres>
+			<deghost_blur_kernel_radius type="double" rang="[0.001, 1.5]" default="0.005" length="1">0.005</deghost_blur_kernel_radius>			
+			<lce       		  			type="double" rang="[0.0,1024]"   default="0"     length="1">0</lce>
+			<low_freq_lce               type="double" rang="[0.0,2048]"   default="1"     length="1">1000</low_freq_lce>
+			<high_freq_lce              type="double" rang="[0.0,100]"    default="2"     length="1">10</high_freq_lce>
+			<contrast         			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</contrast>
+			<lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.001</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.001</hb_contrast>
+			<saturation       			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</saturation>
+			<do_unsharp       			type="int"    rang="[0, 4095]"    default="900"   length="1">0</do_unsharp>
+			<unsharp_sigma_width    	type="double" rang="[0.0,10.0]"   default="0.9"   length="1">1.5</unsharp_sigma_width>
+			<unsharp_sigma_narrow   	type="double" rang="[0.0,10.0]"   default="0.4"   length="1">0.8</unsharp_sigma_narrow>
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">80</lb_exposure>
+			<hb_exposure      			type="int"    rang="[0.0,255.0]"  default="0"     length="1">140</hb_exposure>
+			<enable_shrink_face_protection type="int"    rang="[0,1]"     default="0"     length="1">1</enable_shrink_face_protection>
+		</iso>	
+    </params>
+</image_refiner>

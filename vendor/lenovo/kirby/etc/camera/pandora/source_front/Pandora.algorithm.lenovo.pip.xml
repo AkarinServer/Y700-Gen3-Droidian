@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<algorithm
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="AlgorithmNamespace"
+  xsi:schemaLocation="AlgorithmNamespace Pandora.algorithm.xsd">
+
+  <normal_info>
+    <name>PictureInPicture</name>
+    <author>lenovo</author>
+    <version>1</version>
+    <type>algorithm</type>
+    <supported_usecase>
+      <usecase>preview</usecase>
+      <usecase>video</usecase>
+    </supported_usecase>
+    <multi_frame>
+      <enable>0</enable>
+      <frame_number>1</frame_number>
+    </multi_frame>
+  </normal_info>
+
+  <run_info>
+    <mode>manual</mode>
+    <manual>
+      <key>pandora.algorithm.switcher.pip</key>
+      <value>on</value>
+    </manual>
+    <condition>
+      <iso>
+        <pattern>range</pattern>
+        <value>800,3200</value>
+      </iso>
+      <exposure_time>
+        <pattern>bigger</pattern>
+        <value>10</value>
+      </exposure_time>
+    </condition>
+  </run_info>
+
+  <capabilities>
+    <max_width>0</max_width>
+    <max_height>0</max_height>
+    <preferredProcessOn>output</preferredProcessOn>
+    <supported_format>
+      <format>NV12_SEMI_PLANAR</format>
+      <format>NV21_SEMI_PLANAR</format>
+      <format>YUV</format>
+      <format>MONO</format>
+    </supported_format>
+    <multi_instance_support>1</multi_instance_support>
+    <pal_required>1</pal_required>
+    <GL_required>0</GL_required>
+  </capabilities>
+
+  <debug_info>
+    <check_performance>
+      <enable>0</enable>
+      <count>0</count>
+    </check_performance>
+    <dump_input_output>
+      <enable>0</enable>
+      <format>NV21_SEMI_PLANAR</format>
+    </dump_input_output>
+    <memory_control>
+      <enable>0</enable>
+      <max_size>10MB</max_size>
+    </memory_control>
+    <fd_control>
+      <enable>0</enable>
+      <max_number>0</max_number>
+    </fd_control>
+  </debug_info>
+
+</algorithm>

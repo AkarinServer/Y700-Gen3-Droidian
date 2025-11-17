@@ -1,0 +1,53 @@
+{
+    "qvirtmgr" : {
+
+        "major_number": 2,
+        "minor_number": 0,
+        "vm_config" : [
+            {
+                "name"          : "trustedvm",
+                "loader_type"   : "secured",
+                "restart_level" : "relative",
+                "try_count"     : 3,
+                "boot_wait_time": 2,
+                "pre_boot_ops"  : "create",
+                "boot_ops"      : "start",
+                "disk" : [
+                    { "image"   : "/product/vm-system/trustedvm/system.img", "label" : 10, "read_write" : false },
+                    { "image"   : "/mnt/product/vm-persist/trustedvm/persist.img", "label" : 11, "read_write" : true }
+               ],
+                "enable"        : true,
+                "autostart"     : true,
+                "legacy"        : true,
+                "no_fs_dependency" : false
+            },
+            {
+                "name"          : "oemvm",
+                "loader_type"   : "secured",
+                "restart_level" : "relative",
+                "try_count"     : 3,
+                "boot_wait_time": 2,
+                "pre_boot_ops"  : "create",
+                "boot_ops"      : "start",
+                "disk" : [
+                    { "image"   : "/product/vm-system/oemvm/system.img", "label" : 13, "read_write" : false }
+               ],
+                "enable"        : false,
+                "autostart"     : true,
+                "legacy"        : true,
+                "no_fs_dependency" : false
+            },
+            {
+                "name"          : "cpusys_vm",
+                "loader_type"   : "secured",
+                "restart_level" : "relative",
+                "boot_wait_time": 2,
+                "boot_ops"      : "start",
+                "enable"        : true,
+                "autostart"     : true,
+                "legacy"        : true,
+                "no_fs_dependency" : true
+            }
+        ]
+    }
+}

@@ -1,0 +1,1752 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Morpho HDSR Parameters Configuration -->
+<!-- Copyright(c) 2020 Morpho China,Inc.  -->
+
+<hdsr>
+	<version   type="string" length="1">v1.1.0_lenovo_sr_Lapis_ii_20240909_15_00</version>
+    <camera_id type="int"    length="1">1</camera_id>
+
+    <params>
+	    <zoom_ratio value="2">
+			<iso value="199"> <!-- 0830-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.1</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">0</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">5.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">700</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.4</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">200</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">3.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">68</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.2</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">0.5</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">0</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">0</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">21</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">0.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">14.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">30</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.0</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">5.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.1</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="499"> <!-- 0909-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">1.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">2</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">0</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">3</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">1</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">800</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.2</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.7</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1200</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">78</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.2</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">0.8</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">300</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">800</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">10</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">2.4</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">320</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">1</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">38</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">4</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso> 
+
+			<iso value="999">  <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.9</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">0</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">900</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.2</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1000</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">78</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">0.8</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">200</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">800</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">2.9</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">10</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">350</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">3</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">38</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">5.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">6</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">5.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.5</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="1699"> <!-- 0828-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">2.8</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">0</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">3.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">1000</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1200</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">78</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">3.5</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">350</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">1</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">28</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">6</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="2599"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">1.8</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">0</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">3</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.5</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">5.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">1100</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1200</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">4.8</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">0</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">0</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">5</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">28</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">6</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">3.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="3299"> <!-- 0903-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">4.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">3</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">3</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">2.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">1.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">500</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.6</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">600</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">108</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">5.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">12</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">350</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">3</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">6</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">3.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.1</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="4000"> <!-- 0909-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">1.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">5</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">6</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.5</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">10.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">10</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">1</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">800</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.7</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.7</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">800</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">128</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">4.5</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">13</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">350</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">10</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">3</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">5.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.1</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="4899"> <!-- 0902-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">2.8</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">5</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">6</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">2.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">3.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">900</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.6</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">800</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">65</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">7.8</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">12</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">350</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">6</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">10</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">5.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.1</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="6999"> <!-- 0828-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">3.5</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">5</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">6</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">2</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">800</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">700</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">98</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">6.5</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">350</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">8</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">10</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.1</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.6</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="99999"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">3.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">9</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">13</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.5</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">5.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">600</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.4</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">800</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">128</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.5</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">800</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">7.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">5</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">10</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+		</zoom_ratio>
+
+		<zoom_ratio value="4">
+			<iso value="199"> <!-- 0830-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">3</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">0</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">8</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">700</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.4</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">700</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.2</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1.0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">1.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">0</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">0</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.1</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">0</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">4.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.6</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="499"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">1.5</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">3</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">0</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">8</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">1100</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.9</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.2</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1100</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.2</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">0.8</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1.0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">300</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">800</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">2.5</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">2</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.1</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">0</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.6</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="999"> <!-- 0909-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.7</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">3</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">5</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.5</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">600</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.4</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">800</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.2</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">0.8</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1.0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">3.8</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">0</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">5</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">2.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.1</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">28</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">0</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.5</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="1800"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">1.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">3</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">8</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.5</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">5.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">10</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">1</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">900</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.2</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.7</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1300</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">58</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.1</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1.0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">4.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">12</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">2</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">4.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.1</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">0</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">3</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.6</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="3299"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">2.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">3</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">3</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">5.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">10.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">600</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.6</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1200</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">4.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">350</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">7</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">6</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">3.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="4899"> <!-- 0828-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">2.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">15</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">2</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">21</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">10</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">20</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">600</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.4</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.6</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1000</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">58</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">2.2</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.8</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">2.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">20</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">3</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="6999"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">15</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">2</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">21</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">10</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">10</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">800</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.2</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1000</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">58</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">2.2</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.8</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">800</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">3.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">20</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">3</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.6</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="99999"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">1</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">10</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">18</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.5</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">10</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">2.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">400</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">0.8</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1000</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">128</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">800</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">6.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">20</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">5</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">5</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+		</zoom_ratio>
+
+		<zoom_ratio value="999">
+			<iso value="199"> <!-- 0830-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">1</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">0</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">3</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">15</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">700</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">700</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.3</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">1</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">0</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">0</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">1</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">0</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">5</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.1</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">0</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.5</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="499">  <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.1</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">0</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">3</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">900</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.9</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.2</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1400</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.2</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">0.8</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">300</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">800</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">1.2</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">13</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.1</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">0</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">10.0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.5</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="999">  <!-- 0830-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.5</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">5</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">8</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">10.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">4</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">11</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">1100</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.4</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">700</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">58</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">0.8</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">0.5</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">10</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">2</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">2.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">18</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">6.0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">1.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight>
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="1800"> <!-- 0828-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.8</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">5</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">8</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">3.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">5</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">11</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">500</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.3</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.6</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1300</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">58</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.2</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">2.8</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">0</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">1</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">2.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">4.0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight>
+						<low_freq_level                type="float"   rang="[0,-]"        default="0.0"   length="1">0.2</low_freq_level>
+                        <high_freq_level               type="float"   rang="[0,-]"        default="0.0"   length="1">30.0</high_freq_level>
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="2999"> 
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">15</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">21</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">10</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">50</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">41</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">0</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.1</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1300</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">58</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">2.2</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.8</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">0.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">20</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">3</low_freq_clip_nr_sigma>
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight>
+						<low_freq_level                type="float"   rang="[0,-]"        default="0.0"   length="1">5</low_freq_level>
+                        <high_freq_level               type="float"   rang="[0,-]"        default="0.0"   length="1">10.0</high_freq_level>
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="3999"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">15</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">2</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">21</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">10</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">24</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">900</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">800</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">58</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">2.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">20</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">3</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">2.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">31</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight>
+						<low_freq_level                type="float"   rang="[0,-]"        default="0.0"   length="1">0.5</low_freq_level>
+                        <high_freq_level               type="float"   rang="[0,-]"        default="0.0"   length="1">50.0</high_freq_level>
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.1</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="4899">  <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">0.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">0</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">15</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">2</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">21</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">10</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">8.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">10</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">800</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.1</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.7</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1000</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">78</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">2.2</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.8</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">500</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">10</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">3.4</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">20</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">3</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">6.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">48</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">1</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight>
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">1.0</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="6999"> <!-- 0906-->
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">4.0</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">15</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">2</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">13</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">5.0</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">12.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">21</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">1.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">1.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">20</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">700</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">1.0</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.4</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1000</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.05</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">68</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.5</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.8</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">300</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">6.0</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">15</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">0</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">11</low_freq_clip_nr_sigma>
+
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">4.0</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.8</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">98</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.0</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">21</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">8.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">1</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">6.0</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">4.0</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">220</deghost_face_weight>
+						<low_freq_level                type="float"   rang="[0,-]"        default="0.0"   length="1">1.2</low_freq_level>
+                        <high_freq_level               type="float"   rang="[0,-]"        default="0.0"   length="1">40.0</high_freq_level>
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+
+			<iso value="99999"> 
+				<super_resolution_array>
+					<super_resolution id="0">
+						<y_nr_level     		  type="double"  rang="[0.0,100.0]" default="10.0"  length="1">1</y_nr_level>
+						<y_nr_times     		  type="int"     rang="[1,3]"       default="1"     length="1">1</y_nr_times>
+						<y_nr_level_0   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_0>
+						<y_nr_level_1   		  type="double"  rang="[-1,100.0]"  default="-1"    length="1">-1</y_nr_level_1>
+						<y_nr_radius_0   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_0>
+						<y_nr_radius_1   		  type="int"     rang="[1,20.0]"    default="1"     length="1">1</y_nr_radius_1>						
+						<c_nr_level    			  type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">10</c_nr_level>
+						<c_nr_times    		  	  type="int"     rang="[1,6]"       default="1"     length="1">1</c_nr_times>
+						<c_nr_sigma    		  	  type="int"     rang="[1,6]"       default="1"     length="1">15</c_nr_sigma>
+						<deghost_level   		  type="double"  rang="[0.0,1.0]"   default="1.0"   length="1">1.5</deghost_level>
+						<deghost_nr_level    	  type="double"  rang="[1,20]"      default="4.5"   length="1">4.0</deghost_nr_level>
+						<low_freq_nr_level_0 	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">20</low_freq_nr_level_0>
+						<low_freq_nr_sigma  	  type="int"     rang="[0,40]"      default="0"     length="1">9</low_freq_nr_sigma>
+						<low_freq_nr_level_1	  type="double"  rang="[0.0,50.0]"  default="0"     length="1">0.0</low_freq_nr_level_1>
+						<unsharp_nr_level   	  type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+						<block_cnr   			  type="double"  rang="[1.0, 20.0]" default="1"     length="1">0</block_cnr>
+						<contrast   			  type="int"     rang="[0, 3000]"   default="0"     length="1">0</contrast>
+						<contrast_sigma   		  type="double"  rang="[0, 3.0]"    default="1.8"   length="1">0.8</contrast_sigma>
+						<unsharp_sigma  		  type="double" rang="[0.0,10.0]"   default="0.2"   length="1">0.8</unsharp_sigma>
+						<unsharp_sigma2 		  type="double" rang="[0.0,10.0]"   default="0.6"   length="1">0.5</unsharp_sigma2>
+						<do_unsharp     		  type="int"    rang="[1,~]"        default="1"     length="1">1000</do_unsharp>
+						<unsharp_method		  	  type="int"    rang="[1,~]"        default="1"     length="1">3</unsharp_method>
+						<deghost_table_weight     type="double" rang="[0.0,5.0]"    default="0.5"   length="1">0.5</deghost_table_weight>
+						<ghost_ratio_thres        type="double" rang="[0.0,128.0]"  default="24"    length="1">128</ghost_ratio_thres>
+						<deghost_gauss_sigma0     type="double" rang="[0.0,1.0]"    default="0.4"   length="1">0.8</deghost_gauss_sigma0>
+						<deblur            		  type="double" rang="[0.0,1.0]"    default="0.5"   length="1">0.0</deblur>
+						<deblur_scale             type="double" rang="[0.0,1.0]"    default="1.0"   length="1">1.0</deblur_scale>
+						<input_blur     		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.7</input_blur>
+						<deblur_nr_level		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0</deblur_nr_level>
+						<lce     				  type="int"    rang="[1,1000]"     default="0"     length="1">800</lce>
+						<low_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">500</low_freq_lce>
+						<high_freq_lce			  type="int"    rang="[1,1000]"     default="0"     length="1">30</high_freq_lce>
+						<deblur_edge_nr_level	  type="double" rang="[0.0,10.0]"   default="0"     length="1">3.5</deblur_edge_nr_level>
+						<high_freq_uvnr_enabled	  type="int" 	rang="[0,1]"  	    default="0"     length="1">0</high_freq_uvnr_enabled>
+						<dark_light_nr_enable	  type="int" 	rang="[0,1]"  	    default="0"     length="1">1</dark_light_nr_enable>
+						<grain_adder              type="double" rang="[0.0,10.0]"   default="1.5"   length="1">20</grain_adder>
+						<c_grain_adder	 		  type="double" rang="[0.0,10.0]"   default="1.5" 	length="1">0</c_grain_adder>
+						<block_cnr_1	 		  type="double" rang="[0.0,10.0]"   default="0.0"   length="1">0.0</block_cnr_1>
+						<grain_adder_thr          type="int"    rang="[128 , 512]"  default="128"   length="1">512</grain_adder_thr>
+						<low_freq_clip_nr_level   type="double" rang="[0.0,50.0]"   default="0"     length="1">5</low_freq_clip_nr_level>
+						<low_freq_clip_nr_sigma   type="int"    rang="[0,40]"       default="0"     length="1">21</low_freq_clip_nr_sigma>
+						
+						<deghost_level_face   		   type="double"  rang="[0.0,1.0]"    default="1.0"   length="1">5.5</deghost_level_face>
+						<deghost_nr_level_face    	   type="double"  rang="[1,20]"       default="4.5"   length="1">8.0</deghost_nr_level_face>
+						<deghost_table_weight_face     type="double"  rang="[0.0,5.0]"    default="0.5"   length="1">1.0</deghost_table_weight_face>
+						<ghost_ratio_thres_face        type="double"  rang="[0.0,128.0]"  default="24"    length="1">88</ghost_ratio_thres_face>
+						<deghost_gauss_sigma0_face     type="double"  rang="[0.0,1.0]"    default="0.4"   length="1">1.8</deghost_gauss_sigma0_face>
+						<p_grain_adder	 	  	       type="double"  rang="[0.0,10.0]"   default="0" 	  length="1">0</p_grain_adder>
+						<cross_enable     		       type="int"     rang="[0,1]"        default="0"     length="1">0</cross_enable>
+						<c_nr_clip_sigma     		   type="int"     rang="[0,41]"       default="0"     length="1">12</c_nr_clip_sigma>
+						<deghost_nr_level_scale        type="double"  rang="[0.0,8.0]"    default="1.0"   length="1">4.0</deghost_nr_level_scale>
+						<fast_merge_mode    	       type="int"     rang="[0,1]"        default="0"     length="1">0</fast_merge_mode>
+						<dark_area_nr_level        	   type="double"  rang="[0.0,16.0]"   default="0.0"   length="1">10</dark_area_nr_level>
+						<ghost_nr_level				   type="double"  rang="[0.0,5.0]"    default="1.5"   length="1">2.5</ghost_nr_level>
+						<deghost_face_weight		   type="int"     rang="[0,255]"      default="0"     length="1">180</deghost_face_weight> 
+						<uv_enhance_level		       type="float"     rang="[1.0,1.3]"    default="0"     length="1">1.2</uv_enhance_level> 
+						<white_black_edge		       type="float"     rang="[0,1.0]"      default="0"     length="1">0.7</white_black_edge>
+					</super_resolution>
+				</super_resolution_array>
+			</iso>
+		</zoom_ratio>
+    </params>
+</hdsr>

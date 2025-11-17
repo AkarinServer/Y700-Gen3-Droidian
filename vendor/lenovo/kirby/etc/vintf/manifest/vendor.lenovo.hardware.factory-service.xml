@@ -1,0 +1,10 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.lenovo.hardware.factory</name>
+        <version>2</version>
+        <interface>
+            <name>IFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

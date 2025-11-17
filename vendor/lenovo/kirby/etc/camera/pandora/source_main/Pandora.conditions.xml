@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<conditions
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="ConditionSpace"
+  xsi:schemaLocation="ConditionSpace Pandora.conditions.xsd">
+
+  <AE>
+    <lowlight>
+      <iso>
+        <pattern>range</pattern>
+        <value>800,3200</value>
+      </iso>
+      <exposure_time>
+        <pattern>bigger</pattern>
+        <value>10</value>
+      </exposure_time>
+      <lux_index>
+        <pattern>smaller</pattern>
+        <value>1154</value>
+      </lux_index>
+    </lowlight>
+    <highlight>
+      <iso>
+        <pattern>range</pattern>
+        <value>800,3200</value>
+      </iso>
+      <exposure_time>
+        <pattern>bigger</pattern>
+        <value>10</value>
+      </exposure_time>
+      <lux_index>
+        <pattern>smaller</pattern>
+        <value>1154</value>
+      </lux_index>
+    </highlight>
+    <exposure_chagne>
+      <iso>
+        <pattern>range</pattern>
+        <value>800,3200</value>
+      </iso>
+      <exposure_time>
+        <pattern>bigger</pattern>
+        <value>10</value>
+      </exposure_time>
+      <lux_index>
+        <pattern>smaller</pattern>
+        <value>1154</value>
+      </lux_index>
+    </exposure_chagne>
+    <hdr>
+      <min_confidence>80</min_confidence>
+    </hdr>
+  </AE>
+
+</conditions>

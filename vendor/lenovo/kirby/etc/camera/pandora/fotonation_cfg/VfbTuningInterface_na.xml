@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TuningInterface version="1.2">
+    <EyeCircles>
+        <double name="Video_Convergence_Eye_Weight">0.05</double>
+    </EyeCircles>
+    <EyeEnlargement>
+        <double name="Video_Convergence_Eye_Weight">0.05</double>
+        <double name="Video_Convergence_Eye_Alpha">0.50</double>
+    </EyeEnlargement>
+    <Slimming>
+        <bool name="Use_Double_Precision">true</bool>
+        <uint8 name="Max_Level">195</uint8>
+        <double name="Video_Convergence_Alpha">0.75</double>
+        <uint8 name="Slimming_Yaw_Angle_Abs_Threshold">30</uint8>
+    </Slimming>
+    <SmartColor>
+        <double name="Video_Convergence_Alpha">0.90</double>
+        <bool name="Preserve_Redness">true</bool>
+    </SmartColor>
+    <SmartLight>
+        <array name="GammaValues" size="256" type="double">
+            0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.750,0.756,0.762,0.769,0.775,0.781,0.787,0.794,0.800,0.806,0.813,0.819,0.825,0.831,0.838,0.844,0.850,0.856,0.863,0.869,0.875,0.881,0.887,0.894,0.900,0.906,0.912,0.919,0.925,0.931,0.938,0.944,0.950,0.956,0.963,0.969,0.975,0.981,0.988,0.994,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000,1.000
+        </array>
+        <array name="GammaValues_KeyPoints_X" size="2" type="int32">118,160</array>
+        <array name="GammaValues_KeyPoints_Y" size="2" type="int32">68,0</array>
+        <double name="SampleLevel_Img_LoPrc">0.20</double>
+        <double name="SampleLevel_Img_HiPrc">99.80</double>
+        <double name="SampleLevel_Face_LoPrc">0.20</double>
+        <double name="SampleLevel_Face_HiPrc">99.80</double>
+        <double name="Gamma_CurveDiff">1.50</double>
+        <double name="Gamma_AlphaFace_Factor">0.40</double>
+        <array name="Gamma_Img_AdjustCurve" size="256" type="uint8">
+            0,1,1,2,3,3,4,5,5,6,7,7,8,9,9,10,11,12,12,13,14,15,16,16,17,18,19,20,21,22,23,23,24,25,26,28,29,30,31,32,33,34,35,37,38,39,41,42,43,45,46,48,49,51,52,54,55,57,58,60,62,63,65,67,69,70,72,74,76,77,79,81,83,85,86,88,90,92,94,96,98,100,101,103,105,107,109,111,113,115,116,118,120,122,124,126,128,130,131,133,135,137,139,140,142,144,146,147,149,151,152,154,156,157,159,160,162,163,165,166,168,169,170,172,173,174,176,177,178,179,180,181,183,184,185,186,187,188,189,190,190,191,192,193,194,195,196,196,197,198,199,199,200,201,201,202,203,203,204,204,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,212,213,213,214,214,215,215,215,216,216,217,217,217,218,218,218,219,219,220,220,220,221,221,222,222,222,223,223,224,224,224,225,225,226,226,227,227,228,228,228,229,229,230,231,231,232,232,233,233,234,234,235,236,236,237,238,238,239,240,240,241,242,242,243,244,244,245,246,246,247,248,249,249,250,251,251,252,253,254,254,255
+        </array>
+        <array name="Gamma_Img_AdjustCurve_KeyPoints_X" size="5" type="int32">0,59,133,217,269
+        </array>
+        <array name="Gamma_Img_AdjustCurve_KeyPoints_Y" size="5" type="int32">270,212,88,31,0
+        </array>
+        <array name="Gamma_Face_AdjustCurve" size="256" type="uint8">
+            0,1,1,2,3,3,4,5,5,6,7,7,8,9,9,10,11,12,12,13,14,15,16,16,17,18,19,20,21,22,23,23,24,25,26,28,29,30,31,32,33,34,35,37,38,39,41,42,43,45,46,48,49,51,52,54,55,57,58,60,62,63,65,67,69,70,72,74,76,77,79,81,83,85,86,88,90,92,94,96,98,100,101,103,105,107,109,111,113,115,116,118,120,122,124,126,128,130,131,133,135,137,139,140,142,144,146,147,149,151,152,154,156,157,159,160,162,163,165,166,168,169,170,172,173,174,176,177,178,179,180,181,183,184,185,186,187,188,189,190,190,191,192,193,194,195,196,196,197,198,199,199,200,201,201,202,203,203,204,204,205,206,206,207,207,208,208,209,209,210,210,211,211,212,212,212,213,213,214,214,215,215,215,216,216,217,217,217,218,218,218,219,219,220,220,220,221,221,222,222,222,223,223,224,224,224,225,225,226,226,227,227,228,228,228,229,229,230,231,231,232,232,233,233,234,234,235,236,236,237,238,238,239,240,240,241,242,242,243,244,244,245,246,246,247,248,249,249,250,251,251,252,253,254,254,255
+        </array>
+        <array name="Gamma_Face_AdjustCurve_KeyPoints_X" size="5" type="int32">
+            0,59,133,217,269
+        </array>
+        <array name="Gamma_Face_AdjustCurve_KeyPoints_Y" size="5" type="int32">270,212,88,31,0
+        </array>
+        <bool name="Apply_Curves_Unprocessed">true</bool>
+        <double name="Video_Convergence_Alpha">0.90</double>
+    </SmartLight>
+    <SmoothingToning>
+        <float name="Smoothing_Still_Sharpening_Details_Face">0.50f</float>
+        <float name="Smoothing_Still_Sharpening_Details_Img">0.00f</float>
+        <float name="Still_Sharpening_Details_Max_3DLook">1.00f</float>
+        <float name="Smoothing_Still_Sharpening_BlurYsmall_Weight">0.01f</float>
+        <float name="Smoothing_Still_Sharpening_BlurYmedium_Weight">0.25f</float>
+        <float name="Smoothing_Still_Sharpening_BlurUV_Weight">0.01f</float>
+        <float name="Smoothing_Still_GuidedFiltering_Epsilon">0.01f</float>
+        <float name="Smoothing_Still_GuidedFiltering_Kernel_Weight">0.01f</float>
+        <float name="Smoothing_Still_MouthArea_Protection_Factor">0.50f</float>
+        <float name="Smoothing_Alpha_Blending_And_Color_Smoother_Edges">0.00f</float>
+        <float name="Toning_Still_Saturation_U_WHITE">0.05f</float>
+        <float name="Toning_Still_Saturation_V_WHITE">0.00f</float>
+        <float name="Toning_K1_WHITE">0.00f</float>
+        <float name="Toning_K2_WHITE">2.20f</float>
+        <float name="Toning_K3_WHITE">-1.50f</float>
+        <float name="Toning_K4_WHITE">0.30f</float>
+        <float name="Toning_Still_Saturation_U_TAN">0.00f</float>
+        <float name="Toning_Still_Saturation_V_TAN">-0.02f</float>
+        <float name="Toning_K1_TAN">-0.01f</float>
+        <float name="Toning_K2_TAN">0.73f</float>
+        <float name="Toning_K3_TAN">-0.79f</float>
+        <float name="Toning_K4_TAN">1.07f</float>
+        <float name="Toning_Still_Saturation_U_RED">0.00f</float>
+        <float name="Toning_Still_Saturation_V_RED">-0.10f</float>
+        <float name="Toning_K1_RED">0.00f</float>
+        <float name="Toning_K2_RED">1.60f</float>
+        <float name="Toning_K3_RED">-0.75f</float>
+        <float name="Toning_K4_RED">0.15f</float>
+        <float name="Toning_Saturation_Overall">1.20f</float>
+        <double name="Smoothing_Toning_Video_Convergence_Face_Weight">0.01</double>
+        <int32 name="Smoothing_Toning_Video_Convergence_Face_FrameDiscretization">1</int32>
+        <int32 name="Smoothing_Toning_Video_Convergence_Face_LostForLastFrameCount">5</int32>
+        <int32 name="Log_Down_Threshold1">640</int32>
+        <int32 name="Log_Down_Threshold2">1920</int32>
+    </SmoothingToning>
+    <LipsPerfect>
+        <float name="Lips_Sharpness">1.00f</float>
+        <float name="Lips_Saturation">1.00f</float>
+    </LipsPerfect>
+    <Deflash>
+        <float name="Deflash_Sharpening">0.50f</float>
+    </Deflash>
+    <Spotlight>
+        <bool name="Spotlight_Nose_Only">false</bool>
+    </Spotlight>
+    <SpotsRemoval>
+        <float name="Spots_Removal_Segmentation_Threshold">10.00f</float>
+        <float name="Spots_Removal_Blur_Prc">0.03f</float>
+        <float name="Spots_Removal_Region_Max_Size_Prc">0.00050000f</float>
+        <float name="Spots_Removal_Region_Min_Size_Prc">0.00005000f</float>
+        <float name="Spots_Removal_Coverage_Prc">0.40f</float>
+        <float name="Spots_Removal_Circularity">1.70f</float>
+        <uint8 name="Spots_Removal_Block_Size">8</uint8>
+        <float name="Spots_Removal_Block_Extension_Slope">0.30f</float>
+        <uint8 name="Spots_Removal_Extension_Min_Size">4</uint8>
+        <uint8 name="Spots_Removal_Search_Radius">80</uint8>
+        <uint8 name="Spots_Removal_Search_Step">8</uint8>
+        <bool name="Spots_Removal_Bindi_Protect_Enable">true</bool>
+        <double name="Spots_Removal_Bindi_Protect_Scale">0.5</double>
+    </SpotsRemoval>
+    <Blush>
+        <uint8 name="Blush_R">255</uint8>
+        <uint8 name="Blush_G">30</uint8>
+        <uint8 name="Blush_B">80</uint8>
+    </Blush>
+    <Path>
+        <string name="Bin_File_Saving_Path">/data/data/com.zui.camera/files/vfb</string>
+    </Path>
+    <LowPowerMode>
+        <int32 name="Low_Power_Mode_Threshold_Width">960</int32>
+        <int32 name="Low_Power_Mode_Threshold_Height">720</int32>
+    </LowPowerMode>
+    <PreviewSkipProcess>
+        <bool name="Preview_Skip_Process_Enable">false</bool>
+        <int32 name="Preview_Skip_Process_Delay">502</int32>
+    </PreviewSkipProcess>
+</TuningInterface>

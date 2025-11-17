@@ -1,0 +1,13 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.lenovo.hardware.display</name>
+        <version>2</version>
+        <interface>
+            <name>IDisplay</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>
+
+
+

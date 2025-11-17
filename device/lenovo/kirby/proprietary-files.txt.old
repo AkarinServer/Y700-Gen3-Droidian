@@ -1,0 +1,61 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# This file lists the proprietary files that need to be extracted from the device
+# Run extract-files.py to pull these files from a device running the stock ROM
+
+# Audio
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libqcompostprocbundle.so
+vendor/lib64/libqcomvisualizer.so
+vendor/lib64/libqcomvoiceprocessing.so
+vendor/lib64/libvolumelistener.so
+
+# Camera
+vendor/lib64/libcamera_nn_stub.so
+vendor/lib64/libmmcamera_interface.so
+vendor/lib64/libmmjpeg_interface.so
+vendor/lib64/libmmlib2d_interface.so
+vendor/lib64/libmmstillomx.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libqomx_core.so
+
+# Display
+vendor/lib64/libdisplayconfig.qti.so
+vendor/lib64/libqdMetaData.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libqservice.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmutils.so
+
+# DRM
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libqseed3.so
+
+# GPS
+vendor/lib64/libgps.utils.so
+vendor/lib64/libloc_core.so
+vendor/lib64/liblocation_api.so
+
+# Media
+vendor/lib64/libOmxCore.so
+vendor/lib64/libOmxVdec.so
+vendor/lib64/libOmxVenc.so
+vendor/lib64/libstagefrighthw.so
+
+# Sensors
+vendor/lib64/libsensor1.so
+vendor/lib64/libsensor_reg.so
+
+# WiFi
+vendor/lib64/libwifi-hal-qcom.so
+vendor/lib64/libwpa_client.so
+
+# NOTE: This is a template file. You need to extract the actual proprietary files
+# from your device running the stock ROM using extract-files.py script.
+

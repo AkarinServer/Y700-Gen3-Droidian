@@ -1,0 +1,11 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "IDPS", "Surf", "RCM", "QRD", "QXR", "HDK", "IDP"],
+    "soc_id": ["519", "536", "600", "601", "497", "623", "636", "640", "641", "629", "657", "658"]
+  },
+  "sns_persist_stationary_detect": {
+    "owner": "sns_persist_stationary_detect",
+    "enabled": {"ver": "0","type": "int", "data": "1"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<pipeline
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="PipelineNamespace"
+  xsi:schemaLocation="PipelineNamespace Pandora.pipeline.xsd">
+
+  <enable>1</enable>
+  <name>any</name>
+  <id>0</id>
+  <supported_usecase>
+    <usecase>preview</usecase>
+    <usecase>video</usecase>
+  </supported_usecase>
+  <process_order>fixed</process_order>
+
+  <algorithms>
+    <algorithm>
+      <enable>1</enable>
+      <name>DummyPreviewVideoAlgorithm</name>
+      <author>niklas</author>
+      <version>1</version>
+      <sequence>0</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+    <algorithm>
+      <enable>1</enable>
+      <name>tabletdcvideo</name>
+      <author>morpho</author>
+      <version>1</version>
+      <sequence>1</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+    <algorithm>
+      <enable>1</enable>
+      <name>tablethdrchecker</name>
+      <author>arcsoft</author>
+      <version>1</version>
+      <sequence>2</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+    <algorithm>
+      <enable>1</enable>
+      <name>facebeauty</name>
+      <author>fotonation</author>
+      <version>1</version>
+      <sequence>4</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+    <algorithm>
+      <enable>1</enable>
+      <name>Watermark</name>
+      <author>lenovo</author>
+      <version>1</version>
+      <sequence>5</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+    <algorithm>
+      <enable>1</enable>
+      <name>filter</name>
+      <author>bst</author>
+      <version>1</version>
+      <sequence>6</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+    <algorithm>
+      <enable>1</enable>
+      <name>AlgorithmsDev</name>
+      <author>camera</author>
+      <version>1</version>
+      <sequence>9</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+  </algorithms>
+
+</pipeline>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--should comment this config must a subset of property_service LocaleSet list-->
+<CountryCodeList Locales="zh-CN">
+    <Country name = "China">
+        <code>cn</code>
+    </Country>
+    <Country name = "Russia">
+        <code>ru</code>
+    </Country>
+    <Country name = "Kazakhstan">/
+        <code>ru</code>
+    </Country>
+    <Country name = "Ukraine">
+        <code>ua</code>
+    </Country>
+    <Country name = "Oman">
+        <code>sa</code>
+    </Country>
+    <Country name = "Qatar">
+        <code>om</code>
+    </Country>
+    <Country name = "Kuwait">
+        <code>om</code>
+    </Country>
+    <Country name = "Bahrain">
+        <code>om</code>
+    </Country>
+    <Country name = "Saudi Arabia">
+        <code>sa</code>
+    </Country>
+    <Country name = "United Arab Emirates">
+        <code>ae</code>
+    </Country>
+    <Country name = "Egypt">
+        <code>eg</code>
+    </Country>
+    <Country name = "Kenya">
+        <code>ke</code>
+    </Country>
+    <Country name = "Tanzania">
+        <code>ke</code>
+    </Country>
+    <Country name = "Indonesia">
+        <code>id</code>
+    </Country>
+    <Country name = "Vietnam">
+        <code>vn</code>
+    </Country>
+    <Country name = "Malaysia">
+        <code>my</code>
+    </Country>
+    <Country name = "Thailand">
+        <code>th</code>
+    </Country>
+    <Country name = "India">
+        <code>in</code>
+    </Country>
+    <Country name = "Sri Lanka">
+        <code>lk</code>
+    </Country>
+    <Country name = "Bangladesh">
+        <code>lk</code>
+    </Country>
+    <Country name = "Nepal">
+        <code>np</code>
+    </Country>
+    <Country name = "Romanian">
+        <code>ro</code>
+    </Country>
+    <Country name = "Bulgarian">
+        <code>ro</code>
+    </Country>
+    <Country name = "Hungarian">
+        <code>ro</code>
+    </Country>
+    <Country name = "Greece">
+        <code>ro</code>
+    </Country>
+    <Country name = "Croatian">
+        <code>ro</code>
+    </Country>
+    <Country name = "Slovenian">
+        <code>ro</code>
+    </Country>
+    <Country name = "Slovakian">
+        <code>ro</code>
+    </Country>
+    <Country name = "Czech">
+        <code>ro</code>
+    </Country>
+    <Country name = "Austria">
+        <code>is</code>
+    </Country>
+    <Country name = "TaiWan">
+        <code>tw</code>
+    </Country>
+    <Country name = "Poland">
+        <code>ro</code>
+    </Country>
+    <Country name = "Serbia">
+        <code>rs</code>
+    </Country>
+    <Country name = "Macedonia">
+        <code>rs</code>
+    </Country>
+    <Country name = "Turkey">
+        <code>tr</code>
+    </Country>
+    <Country name = "Myanmar">
+        <code>sg</code>
+    </Country>
+    <Country name = "Singapore">
+        <code>sg</code>
+    </Country>
+    <Country name = "Kyrgyzstan">
+        <code>ru</code>
+    </Country>
+    <Country name = "Armenia">
+        <code>ru</code>
+    </Country>
+    <Country name = "Belarus">
+        <code>ru</code>
+    </Country>
+    <Country name = "Georgia">
+        <code>ua</code>
+    </Country>
+    <Country name = "Azerbaijan">
+        <code>ua</code>
+    </Country>
+    <Country name = "Moldova">
+        <code>ua</code>
+    </Country>
+    <Country name = "Pakistan">
+        <code>pk</code>
+    </Country>
+    <Country name = "Philippines">
+        <code>ph</code>
+    </Country>
+    <Country name = "HongKong">
+        <code>hk</code>
+    </Country>
+    <Country name = "Japanese">
+        <code>jp</code>
+    </Country>
+    <Country name = "Italy">
+        <code>is</code>
+    </Country>
+    <Country name = "Spain">
+        <code>is</code>
+    </Country>
+    <Country name = "Germany">
+        <code>is</code>
+    </Country>
+    <Country name = "France">
+        <code>is</code>
+    </Country>
+    <Country name = "United Kingdom">
+        <code>uk</code>
+    </Country>
+    <Country name = "Brazil">
+        <code>br</code>
+    </Country>
+    <Country name = "Sweden">
+        <code>is</code>
+    </Country>
+    <Country name = "Denmark">
+        <code>is</code>
+    </Country>
+    <Country name = "Netherlands">
+        <code>is</code>
+    </Country>
+    <Country name = "Belgium">
+        <code>is</code>
+    </Country>
+    <Country name = "Finland">
+        <code>is</code>
+    </Country>
+    <Country name = "Norway">
+        <code>is</code>
+    </Country>
+    <Country name = "USA">
+        <code>us</code>
+    </Country>
+</CountryCodeList>

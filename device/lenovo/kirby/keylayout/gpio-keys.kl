@@ -1,0 +1,12 @@
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Volume keys
+key 114   VOLUME_DOWN
+key 115   VOLUME_UP
+
+# Power key
+key 116   POWER
+

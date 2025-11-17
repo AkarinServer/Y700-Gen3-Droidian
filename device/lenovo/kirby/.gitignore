@@ -1,0 +1,22 @@
+# Build artifacts
+*.o
+*.so
+*.a
+*.ko
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary files
+*.tmp
+*.bak
+*.orig

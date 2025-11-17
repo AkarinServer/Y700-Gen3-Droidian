@@ -1,0 +1,22 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "IDPS", "Dragon", "Surf", "QRD", "QXR", "HDK", "IDP", "IOT", "RCM"],
+    "soc_id": ["519", "557", "536", "577", "614", "632", "642", "643", "497", "498", "623", "652", "636", "640", "641", "629", "657", "658"]
+  },
+  "sns_rotv_platform": {
+    "owner": "sns_rotv",
+    ".config":{
+      "owner": "sns_rotv",
+      "min_report_rate": {
+         "type": "flt", "ver": "0", "data": "1.0"
+      },
+      "debug_mode": {
+        "type": "int", "ver": "0", "data": "0"
+      },
+      "sample_rate": {
+        "type": "flt", "ver": "0", "data": "5.0"
+      }
+    }
+  }
+}

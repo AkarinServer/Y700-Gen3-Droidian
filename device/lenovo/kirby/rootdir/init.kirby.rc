@@ -1,0 +1,24 @@
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-init
+    # Set permissions for kirby-specific files
+    chmod 0664 /sys/class/leds/button-backlight/brightness
+    chown system system /sys/class/leds/button-backlight/brightness
+
+on init
+    # Create directories
+    mkdir /data/vendor/audio 0770 audio audio
+    mkdir /data/vendor/camera 0770 camera camera
+
+on boot
+    # Set kernel parameters
+    write /proc/sys/kernel/sched_boost 0
+    write /proc/sys/kernel/sched_tunable_scaling 1
+
+on property:sys.boot_completed=1
+    # Enable features after boot
+    setprop vendor.display.enable_default_color_mode 0
+

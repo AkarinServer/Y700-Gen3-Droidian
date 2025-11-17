@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<pipeline
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="PipelineNamespace"
+  xsi:schemaLocation="PipelineNamespace Pandora.pipeline.xsd">
+
+  <enable>1</enable>
+  <name>any</name>
+  <id>0</id>
+  <supported_usecase>
+    <usecase>snapshot</usecase>
+  </supported_usecase>
+  <process_order>fixed</process_order>
+
+  <algorithms>
+    <algorithm>
+      <enable>1</enable>
+      <name>DummySnapshotAlgorithm</name>
+      <author>niklas</author>
+      <version>1</version>
+      <sequence>255</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+    <algorithm>
+      <enable>1</enable>
+      <name>ImageRotate</name>
+      <author>lenovo</author>
+      <version>1</version>
+      <sequence>1</sequence>
+      <algorithm_type>algorithm</algorithm_type>
+    </algorithm>
+  </algorithms>
+
+</pipeline>
